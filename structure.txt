@@ -1,0 +1,53 @@
+# Structure du projet PEA Absolute Return
+# Créez cette structure de dossiers dans votre répertoire de projet
+
+"""
+pea_absolute_return/
+├── src/
+│   ├── __init__.py
+│   ├── regime_detection/
+│   │   ├── __init__.py
+│   │   ├── market_regime_detector.py
+│   │   └── indicators.py
+│   ├── allocation/
+│   │   ├── __init__.py
+│   │   ├── adaptive_allocation.py
+│   │   └── sector_rotation.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   └── data_pipeline.py
+│   ├── dashboard/
+│   │   ├── __init__.py
+│   │   └── streamlit_dashboard.py
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+├── config/
+│   ├── __init__.py
+│   └── config.py
+├── tests/
+│   └── __init__.py
+├── data/
+│   └── raw/
+├── requirements.txt
+└── main.py
+"""
+
+# requirements.txt - Packages nécessaires
+requirements_content = """
+pandas>=1.5.0
+numpy>=1.21.0
+yfinance>=0.2.0
+plotly>=5.15.0
+streamlit>=1.25.0
+scikit-learn>=1.3.0
+ta-lib>=0.4.0
+requests>=2.31.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+python-dotenv>=1.0.0
+"""
+
+print("Créez cette structure de dossiers et le fichier requirements.txt avec le contenu ci-dessus.")
+print("\nEnsuite, installez les dépendances avec :")
+print("pip install -r requirements.txt")
